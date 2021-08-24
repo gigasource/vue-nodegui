@@ -27,44 +27,30 @@
   </vn-view>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue';
 
-export default {
-  setup() {
-    const count = ref(0);
-    const viewVisible = ref(true);
-    const dialValue = ref(0);
-    const data = [
-      {text: "item 1"}, 
-      {text: "item 2"}, 
-      {text: "item 3"}, 
-    ];
-    const line1Text = ref('Type whatever you want in the text box below');
-    const inc = () => {
-      count.value++;
-    }
+const count = ref(0);
+const viewVisible = ref(true);
+const dialValue = ref(0);
+const data = [
+  {text: "item 1"},
+  {text: "item 2"},
+  {text: "item 3"},
+];
+const line1Text = ref('Type whatever you want in the text box below');
+const inc = () => {
+  count.value++;
+}
 
-    const toggleView = () => {
-      viewVisible.value = !viewVisible.value;
-    }
+const toggleView = () => {
+  viewVisible.value = !viewVisible.value;
+}
 
-    const link = `<a 
-              style="color: white" 
+const link = `<a
+              style="color: white"
               href="https://github.com/nodegui/vue-nodegui">
             docs
           </a>`;
 
-    return {
-      count,
-      inc,
-      viewVisible,
-      toggleView,
-      line1Text,
-      link,
-      data,
-      dialValue,
-    };
-  }
-}
 </script>

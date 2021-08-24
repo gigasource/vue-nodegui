@@ -11,20 +11,9 @@
   </vn-scroll-area>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue';
 import HelloWorld from "./Header";
 
-export default {
-  components: {
-    HelloWorld: HelloWorld,
-  },
-  setup() {
-    const sliderValue = ref(0);
-
-    return {
-      sliderValue
-    }
-  }
-};
+const sliderValue = ref(0);
 </script>

@@ -1,23 +1,26 @@
 {
     "compilerOptions": {
-        "lib": [
-            "es2015",
-            "dom"
-        ],
-        "target": "es2015",
-        "module": "commonjs",
-        "declaration": true,
-        "sourceMap": true,
-        "outDir": "./dist",
-        "strict": true,
-        "strictPropertyInitialization": false,
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "baseUrl": "src",
-        "skipLibCheck": true
+      "baseUrl": "src",
+      "outDir": "dist",
+      "sourceMap": false,
+      "target": "es2016",
+      "useDefineForClassFields": false,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "allowJs": false,
+      "strict": true,
+      "noUnusedLocals": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "removeComments": false,
+      "jsx": "preserve",
+      "lib": ["esnext", "dom"],
+      "rootDir": ".",
+      "skipLibCheck": true
     },
     "include": [
-        "src"
+      "src/**/*.ts"
     ],
     "exclude": [
         "node_modules"
